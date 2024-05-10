@@ -22,6 +22,12 @@ Crossformer was published as a conference paper at ISLR 2023. Unlike traditional
 The test data used in the paper have limited number of dimensions with relatively singificant seasonality (eg. Etth1 was a combination of of 7 hourly time-series data). This project aimed to experiment with the model and see how it would perform when the data is more complicated and the dimension is notably larger.
 
 Stock return data from China A-shares from 2010 onwards was used. After several rounds of experiemnts, weak signals could be captured by the model, and the constructed portfolio resulted in a 13.5-16.2% Annual PnL in the test set.
+<p align="center">
+<img src="https://github.com/austinmyc/CrossFormer/assets/59735570/222a6c68-1dcd-449a-a4cb-1f923743ece7">
+<img src="https://github.com/austinmyc/CrossFormer/assets/59735570/b09a9b6b-a1c6-4244-8dc8-ae65d33c3032">
+</p>
+
+This repo aims to share the experiment process and the configuration used to generate such results. Data used in training are not provided here due to size issues. But you are welcome to experiment with different markets as well.
 
 ## Experiments
 
