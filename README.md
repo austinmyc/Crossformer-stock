@@ -8,7 +8,7 @@
 <p align="center">
   <a href="#background">Background</a> •
   <a href="#experiments">Experiments</a> •
-  <a href="#sresults">Results</a>
+  <a href="#results">Results</a>
   
   
 </p>
