@@ -1,0 +1,73 @@
+python main_crossformer.py --data small_sty_mean --in_len 168 --out_len 1 --seg_len 6 --learning_rate 8e-5 --patience 5 --itr 1 --save_pred
+Args in experiment:
+Namespace(data='small_sty_mean', root_path='./datasets/', data_path='styAdj_small_mean.csv', data_split=[2120, 530, 1], checkpoints='./checkpoints/', in_len=168, out_len=1, seg_len=6, win_size=2, factor=10, data_dim=674, d_model=256, d_ff=512, n_heads=4, e_layers=3, dropout=0.2, baseline=False, num_workers=0, batch_size=32, train_epochs=20, patience=5, learning_rate=8e-05, lradj='type1', itr=1, save_pred=True, use_gpu=False, gpu=0, use_multi_gpu=False, devices='0,1,2,3')
+Use CPU
+>>>>>>>start training : Crossformer_small_sty_mean_il168_ol1_sl6_win2_fa10_dm256_nh4_el3_itr0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 1952
+val 530
+test 1
+
+Epoch: 1 cost time: 1713.7769465446472
+Epoch: 1, Steps: 61 | Train Loss: 1.2441491 Vali Loss: 1.3924812 Test Loss: 1.2637657
+Validation loss decreased (inf --> 1.392481).  Saving model ...
+
+Epoch: 2 cost time: 1712.6558439731598
+Epoch: 2, Steps: 61 | Train Loss: 1.0879629 Vali Loss: 1.3883454 Test Loss: 1.2592776
+Validation loss decreased (1.392481 --> 1.388345).  Saving model ...
+Updating learning rate to 4e-05
+
+Epoch: 3 cost time: 1715.5121576786041
+Epoch: 3, Steps: 61 | Train Loss: 1.0767956 Vali Loss: 1.3915042 Test Loss: 1.2562894
+EarlyStopping counter: 1 out of 5
+
+Epoch: 4 cost time: 1713.7186393737793
+Epoch: 4, Steps: 61 | Train Loss: 1.0723941 Vali Loss: 1.3873783 Test Loss: 1.2550726
+Validation loss decreased (1.388345 --> 1.387378).  Saving model ...
+Updating learning rate to 2e-05
+
+Epoch: 5 cost time: 1714.0637681484222
+Epoch: 5, Steps: 61 | Train Loss: 1.0677244 Vali Loss: 1.3863537 Test Loss: 1.2558433
+Validation loss decreased (1.387378 --> 1.386354).  Saving model ...
+
+Epoch: 6 cost time: 1716.8733084201813
+Epoch: 6, Steps: 61 | Train Loss: 1.0655472 Vali Loss: 1.3914001 Test Loss: 1.2589617
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 1e-05
+
+Epoch: 7 cost time: 1714.5384895801544
+Epoch: 7, Steps: 61 | Train Loss: 1.0638527 Vali Loss: 1.3900251 Test Loss: 1.2563871
+EarlyStopping counter: 2 out of 5
+
+Epoch: 8 cost time: 1725.5161595344543
+Epoch: 8, Steps: 61 | Train Loss: 1.0626511 Vali Loss: 1.3935041 Test Loss: 1.2549533
+EarlyStopping counter: 3 out of 5
+Updating learning rate to 5e-06
+
+Epoch: 9 cost time: 1733.7074151039124
+Epoch: 9, Steps: 61 | Train Loss: 1.0614524 Vali Loss: 1.3835325 Test Loss: 1.2547255
+Validation loss decreased (1.386354 --> 1.383532).  Saving model ...
+
+Epoch: 10 cost time: 1733.9606897830963
+Epoch: 10, Steps: 61 | Train Loss: 1.0612297 Vali Loss: 1.3854058 Test Loss: 1.2541355
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 2.5e-06
+
+Epoch: 11 cost time: 1727.7570207118988
+Epoch: 11, Steps: 61 | Train Loss: 1.0608362 Vali Loss: 1.3865772 Test Loss: 1.2548136
+EarlyStopping counter: 2 out of 5
+
+Epoch: 12 cost time: 1714.402581691742
+Epoch: 12, Steps: 61 | Train Loss: 1.0608384 Vali Loss: 1.3899774 Test Loss: 1.2545409
+EarlyStopping counter: 3 out of 5
+
+Epoch: 13 cost time: 1712.5571460723877
+Epoch: 13, Steps: 61 | Train Loss: 1.0606615 Vali Loss: 1.3915177 Test Loss: 1.2543429
+EarlyStopping counter: 4 out of 5
+
+Epoch: 14 cost time: 1714.0539467334747
+Epoch: 14, Steps: 61 | Train Loss: 1.0606007 Vali Loss: 1.3926308 Test Loss: 1.2547728
+EarlyStopping counter: 5 out of 5
+Early stopping
+>>>>>>>testing : Crossformer_small_sty_mean_il168_ol1_sl6_win2_fa10_dm256_nh4_el3_itr0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 1
+mse:0.000534297781996429, mae:0.014168190769851208
